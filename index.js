@@ -1,4 +1,3 @@
-const schemeBtn = document.getElementById("scheme-btn")
 let colors = []
 
 document.addEventListener('change',function() {
