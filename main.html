@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
+    <script src="index.js" async></script>
     <link rel="stylesheet" href="styles.css">
     <title>Color Picker</title>
 </head>
@@ -12,38 +12,38 @@
     <main>
         <div class="header">
             <input type="color" class="color-picker" id="color-picker" value="#4230df">
-            <select>
-                <option>Monochrome</option>
-                <option>Monochrome-dark</option>
-                <option>Monochrome-light</option>
-                <option>Analogic</option>
-                <option>Complement</option>
-                <option>Analogic-complement</option>
-                <option>Triad</option>
-                <option>Quad</option>
+            <select id="select-mode">
+                <option>monochrome</option>
+                <option>monochrome-dark</option>
+                <option>monochrome-light</option>
+                <option>analogic</option>
+                <option>complement</option>
+                <option>analogic-complement</option>
+                <option>triad</option>
+                <option>quad</option>
             </select>
-            <button class="get-scheme-btn">Get color scheme</button>
+            <button class="scheme-btn" id="scheme-btn">Get color scheme</button>
         </div>
         <div class="palete">
             <div class="color-plus-hex">
-                <div class="color"></div>
-                <p class="hex-name">1</p>
+                <div class="color-container"></div>
+                <p class="hex-name">#1F157A</p>
             </div>
             <div class="color-plus-hex">
-                <div class="color"></div>
-                <p class="hex-name">2</p>
+                <div class="color-container"></div>
+                <p class="hex-name">#2A1CA7</p>
             </div>
             <div class="color-plus-hex">
-                <div class="color"></div>
-                <p class="hex-name">3</p>
+                <div class="color-container"></div>
+                <p class="hex-name">#3421D4</p>
             </div>
             <div class="color-plus-hex">
-                <div class="color"></div>
-                <p class="hex-name">4</p>
+                <div class="color-container"></div>
+                <p class="hex-name">#5646E3</p>
             </div>
             <div class="color-plus-hex">
-                <div class="color"></div>
-                <p class="hex-name">5</p>
+                <div class="color-container"></div>
+                <p class="hex-name">#7E71EA</p>
             </div>
         </div>
     </main>
