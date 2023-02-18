@@ -1,7 +1,7 @@
 const schemeBtn = document.getElementById("scheme-btn")
 let colors = []
 
-schemeBtn.addEventListener('click',function() {
+document.addEventListener('change',function() {
     const seedHex = document.getElementById("color-picker").value.slice(1)
     const mode = document.getElementById("select-mode").value
     fetch(`https://www.thecolorapi.com/scheme?hex=${seedHex}&mode=${mode}&count=5`)
