@@ -74,6 +74,10 @@ select option{
   .color-plus-hex:nth-child(5) .color-container {
     background-color: #7E71EA;
   }
+
+  .hex-name{
+    cursor: pointer;
+  }
   
   @media (max-width: 768px) {
     main{

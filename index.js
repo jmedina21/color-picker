@@ -1,4 +1,14 @@
+const hexName = document.querySelectorAll(".hex-name")
 let colors = []
+console.log(hexName)
+
+hexName.forEach(hexName => {
+hexName.addEventListener('click', function() {
+    let hexValue = hexName.textContent
+    navigator.clipboard.writeText(hexValue)
+    alert("Copied the text: " + hexValue)
+})
+})
 
 document.addEventListener('change',function() {
     const seedHex = document.getElementById("color-picker").value.slice(1)
