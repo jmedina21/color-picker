@@ -55,30 +55,34 @@ select option{
     height: 300px;
 }
 
-.color-plus-hex:nth-child(1) .color-container {
+.color-column{
+    cursor: pointer;
+}
+
+.color-column:nth-child(1) .color-container {
     background-color: #1F157A;
   }
   
-  .color-plus-hex:nth-child(2) .color-container {
+  .color-column:nth-child(2) .color-container {
     background-color: #2A1CA7;
   }
   
-  .color-plus-hex:nth-child(3) .color-container {
+  .color-column:nth-child(3) .color-container {
     background-color: #3421D4;
   }
   
-  .color-plus-hex:nth-child(4) .color-container {
+  .color-column:nth-child(4) .color-container {
     background-color: #5646E3;
   }
   
-  .color-plus-hex:nth-child(5) .color-container {
+  .color-column:nth-child(5) .color-container {
     background-color: #7E71EA;
   }
 
   .hex-name{
     cursor: pointer;
   }
-  
+
   @media (max-width: 768px) {
     main{
         width: 80vw;
