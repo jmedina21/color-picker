@@ -109,4 +109,27 @@ select option{
     main{
         width: 80vw;
     }
+
+  .palete{
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
   }
+
+  .color-column{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .color-container{
+    height: 60px;
+    /* flex-grow: 1; */
+    width: 50vw;
+  }
+
+  .hex-name{
+    width: 12vw;
+    margin:0 5vw;
+  }
+}
