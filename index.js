@@ -1,4 +1,7 @@
 const colorElements = document.querySelectorAll('.color-column');
+const tooltip = document.getElementById("tooltip");
+const palete = document.querySelector(".palete");
+
 let colors = []
 
 colorElements.forEach(colorElement => {
@@ -6,6 +9,24 @@ colorElements.forEach(colorElement => {
     const hexValue = colorElement.querySelector('.hex-name');
     navigator.clipboard.writeText(hexValue.textContent)
   });
+});
+
+palete.addEventListener("click", function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  console.log(x, y);
+  
+  tooltip.style.left = x + "px";
+  tooltip.style.top = y + "px";
+  tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = 1;
+    setTimeout(function(){
+        tooltip.style.transition = 'opacity 0.3s ease';
+        tooltip.style.opacity = 0;
+    }, 1200);
+    setTimeout(function(){
+    tooltip.style.visibility = 'hidden';
+    }, 2000);
 });
 
 document.addEventListener('change',function() {
