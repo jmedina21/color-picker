@@ -1,7 +1,6 @@
 const colorElements = document.querySelectorAll('.color-column');
 const tooltip = document.getElementById("tooltip");
 const palete = document.querySelector(".palete");
-
 let colors = []
 
 colorElements.forEach(colorElement => {
@@ -14,8 +13,6 @@ colorElements.forEach(colorElement => {
 palete.addEventListener("click", function(event) {
   let x = event.clientX;
   let y = event.clientY;
-  console.log(x, y);
-  
   tooltip.style.left = x + "px";
   tooltip.style.top = y + "px";
   tooltip.style.visibility = 'visible';
